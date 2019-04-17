@@ -9838,6 +9838,7 @@ by exp-lbrs.ulp</description>
 <part name="L3" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="IND-" device="0402" package3d_urn="urn:adsk.eagle:package:8170460/4"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="470k"/>
 <part name="S2" library="parts_ck" library_urn="urn:adsk.eagle:library:7450062" deviceset="PTS840_GM_SMTR_LFS" device="" package3d_urn="urn:adsk.eagle:package:7450065/3"/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11091,6 +11092,9 @@ by exp-lbrs.ulp</description>
 <attribute name="PACKAGE" x="86.36" y="107.95" size="1.016" layer="97"/>
 <attribute name="CURRENT" x="91.44" y="107.95" size="1.016" layer="97"/>
 </instance>
+<instance part="GND7" gate="1" x="246.38" y="157.48" smashed="yes">
+<attribute name="VALUE" x="243.84" y="154.94" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 <bus name="ADDR:ADDR[0..31]">
@@ -11308,6 +11312,11 @@ by exp-lbrs.ulp</description>
 <wire x1="157.48" y1="109.22" x2="157.48" y2="106.68" width="0.1524" layer="91"/>
 <junction x="157.48" y="106.68"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$6" pin="TST"/>
+<wire x1="228.6" y1="160.02" x2="246.38" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -11383,6 +11392,11 @@ by exp-lbrs.ulp</description>
 <pinref part="L3" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="109.22" x2="86.36" y2="119.38" width="0.1524" layer="91"/>
 <label x="88.9" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$6" pin="BMS"/>
+<wire x1="228.6" y1="157.48" x2="241.3" y2="157.48" width="0.1524" layer="91"/>
+<label x="233.68" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+1V8" class="0">
@@ -12177,6 +12191,11 @@ by exp-lbrs.ulp</description>
 <wire x1="238.76" y1="106.68" x2="241.3" y2="106.68" width="0.1524" layer="91"/>
 <junction x="238.76" y="106.68"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$6" pin="NRST"/>
+<wire x1="228.6" y1="162.56" x2="243.84" y2="162.56" width="0.1524" layer="91"/>
+<label x="236.22" y="162.56" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MII_ERXDV" class="0">
 <segment>
@@ -12285,6 +12304,20 @@ by exp-lbrs.ulp</description>
 <wire x1="101.6" y1="106.68" x2="101.6" y2="109.22" width="0.1524" layer="91"/>
 <junction x="101.6" y="109.22"/>
 <pinref part="L3" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="!SHDN" class="0">
+<segment>
+<pinref part="U$1" gate="G$6" pin="SHDN"/>
+<wire x1="228.6" y1="167.64" x2="243.84" y2="167.64" width="0.1524" layer="91"/>
+<label x="236.22" y="167.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="!WKUP" class="0">
+<segment>
+<pinref part="U$1" gate="G$6" pin="WKUP"/>
+<wire x1="228.6" y1="165.1" x2="243.84" y2="165.1" width="0.1524" layer="91"/>
+<label x="236.22" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
