@@ -9837,6 +9837,7 @@ by exp-lbrs.ulp</description>
 <part name="GND34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L3" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="IND-" device="0402" package3d_urn="urn:adsk.eagle:package:8170460/4"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="470k"/>
+<part name="S2" library="parts_ck" library_urn="urn:adsk.eagle:library:7450062" deviceset="PTS840_GM_SMTR_LFS" device="" package3d_urn="urn:adsk.eagle:package:7450065/3"/>
 </parts>
 <sheets>
 <sheet>
@@ -10120,6 +10121,10 @@ by exp-lbrs.ulp</description>
 </instance>
 <instance part="GND19" gate="1" x="111.76" y="99.06" smashed="yes">
 <attribute name="VALUE" x="109.22" y="96.52" size="1.778" layer="96"/>
+</instance>
+<instance part="S2" gate="G$1" x="127" y="86.36" smashed="yes">
+<attribute name="NAME" x="121.91408125" y="94.49748125" size="1.78006875" layer="95"/>
+<attribute name="VALUE" x="114.27736875" y="81.2347" size="1.78591875" layer="96"/>
 </instance>
 </instances>
 <busses>
