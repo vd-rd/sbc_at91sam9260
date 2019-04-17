@@ -10955,11 +10955,11 @@ by exp-lbrs.ulp</description>
 <attribute name="RATING" x="215.9" y="47.244" size="1.016" layer="97"/>
 <attribute name="PACKAGE" x="215.9" y="45.72" size="1.016" layer="97"/>
 </instance>
-<instance part="C20" gate="G$1" x="223.52" y="48.26" smashed="yes">
-<attribute name="NAME" x="225.044" y="48.641" size="1.778" layer="95"/>
-<attribute name="VALUE" x="225.044" y="43.561" size="1.778" layer="96"/>
-<attribute name="RATING" x="226.06" y="47.244" size="1.016" layer="97"/>
-<attribute name="PACKAGE" x="226.06" y="45.72" size="1.016" layer="97"/>
+<instance part="C20" gate="G$1" x="243.84" y="48.26" smashed="yes">
+<attribute name="NAME" x="245.364" y="48.641" size="1.778" layer="95"/>
+<attribute name="VALUE" x="245.364" y="43.561" size="1.778" layer="96"/>
+<attribute name="RATING" x="246.38" y="47.244" size="1.016" layer="97"/>
+<attribute name="PACKAGE" x="246.38" y="45.72" size="1.016" layer="97"/>
 </instance>
 <instance part="C21" gate="G$1" x="200.66" y="66.04" smashed="yes">
 <attribute name="NAME" x="202.184" y="66.421" size="1.778" layer="95"/>
@@ -11169,7 +11169,7 @@ by exp-lbrs.ulp</description>
 <wire x1="203.2" y1="43.18" x2="213.36" y2="43.18" width="0.1524" layer="91"/>
 <junction x="203.2" y="43.18"/>
 <pinref part="C20" gate="G$1" pin="2"/>
-<wire x1="213.36" y1="43.18" x2="223.52" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="43.18" x2="243.84" y2="43.18" width="0.1524" layer="91"/>
 <junction x="213.36" y="43.18"/>
 </segment>
 <segment>
@@ -11332,6 +11332,10 @@ by exp-lbrs.ulp</description>
 <pinref part="U$1" gate="G$5" pin="VDDIOP0@32"/>
 <pinref part="U$1" gate="G$5" pin="VDDIOP0@24"/>
 <pinref part="U$1" gate="G$5" pin="VDDIOP0@13"/>
+<pinref part="U$1" gate="G$5" pin="VDDIOP1@169"/>
+<wire x1="149.86" y1="147.32" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="147.32" x2="154.94" y2="152.4" width="0.1524" layer="91"/>
+<junction x="154.94" y="152.4"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -11391,12 +11395,9 @@ by exp-lbrs.ulp</description>
 <wire x1="162.56" y1="50.8" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
 <junction x="162.56" y="50.8"/>
 <label x="144.78" y="50.8" size="1.778" layer="95"/>
-<pinref part="C20" gate="G$1" pin="1"/>
 <pinref part="C19" gate="G$1" pin="1"/>
-<wire x1="223.52" y1="50.8" x2="213.36" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="C18" gate="G$1" pin="1"/>
 <wire x1="213.36" y1="50.8" x2="203.2" y2="50.8" width="0.1524" layer="91"/>
-<junction x="213.36" y="50.8"/>
 <wire x1="203.2" y1="50.8" x2="193.04" y2="50.8" width="0.1524" layer="91"/>
 <junction x="203.2" y="50.8"/>
 <junction x="193.04" y="50.8"/>
@@ -11654,6 +11655,11 @@ by exp-lbrs.ulp</description>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="81.28" x2="200.66" y2="78.74" width="0.1524" layer="91"/>
 <label x="200.66" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$6" pin="PLLRCA"/>
+<wire x1="198.12" y1="132.08" x2="182.88" y2="132.08" width="0.1524" layer="91"/>
+<label x="180.34" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LSE_OUT" class="0">
@@ -12247,17 +12253,21 @@ by exp-lbrs.ulp</description>
 <label x="218.44" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U$1" gate="G$5" pin="VDDIOP1@169"/>
-<wire x1="149.86" y1="147.32" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
-<label x="154.94" y="147.32" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$27" class="0">
+<net name="VDDBU" class="0">
 <segment>
 <pinref part="U$1" gate="G$5" pin="VDDBU@47"/>
 <wire x1="109.22" y1="167.64" x2="99.06" y2="167.64" width="0.1524" layer="91"/>
+<label x="96.52" y="167.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$6" pin="OSCSEL"/>
+<wire x1="198.12" y1="144.78" x2="182.88" y2="144.78" width="0.1524" layer="91"/>
+<label x="180.34" y="144.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C20" gate="G$1" pin="1"/>
+<wire x1="243.84" y1="50.8" x2="233.68" y2="50.8" width="0.1524" layer="91"/>
+<label x="236.22" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$28" class="0">
