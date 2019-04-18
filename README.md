@@ -1,9 +1,6 @@
-View this project on [CADLAB.io](https://cadlab.io/project/1695). 
-
-## sbc_at91sam9260
-
-The second installment in the embedded Linux hardware development.
-The board is an updated version of the previous AT91RM9200_SBC.
+## Description
+The second installment in the embedded Linux hardware development learning exercise.
+The board is an updated version of the previous [AT91RM9200_SBC](https://github.com/vd-rd/sbc_at91rm9200/).
 
 ### Features
  * CPU - AT91SAM9260 processor (ARM926EJ @ 200MHz)
@@ -13,4 +10,11 @@ The board is an updated version of the previous AT91RM9200_SBC.
  * microUSB client interface
  * RMII interface for Ethernet
  * standard ApolloIoT expansion header
+
+### Resources
+You can find all necesary information to build or evaluate the module here:
+   - [View layout and schematic](https://cadlab.io/project/1695) 
+   - [View 3D board render](https://a360.co/2PfLcwq)
+   - [Fabrication files](https://github.com/vd-rd/sbc_at91sam9260/releases)
+
 
