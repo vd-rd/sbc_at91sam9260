@@ -1,3 +1,5 @@
+View this project on [CADLAB.io](https://cadlab.io/project/1695). 
+
 ## sbc_at91sam9260
 
 The second installment in the embedded Linux hardware development.
