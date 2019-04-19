@@ -11501,11 +11501,16 @@ R27 should not be populated</text>
 </segment>
 <segment>
 <pinref part="IC6" gate="G$1" pin="VCC"/>
-<wire x1="175.26" y1="68.58" x2="185.42" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="68.58" x2="180.34" y2="68.58" width="0.1524" layer="91"/>
 <label x="180.34" y="68.58" size="1.778" layer="95"/>
 <pinref part="C62" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="68.58" x2="185.42" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="68.58" x2="187.96" y2="68.58" width="0.1524" layer="91"/>
 <junction x="185.42" y="68.58"/>
+<pinref part="IC6" gate="G$1" pin="/WP"/>
+<wire x1="175.26" y1="66.04" x2="180.34" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="66.04" x2="180.34" y2="68.58" width="0.1524" layer="91"/>
+<junction x="180.34" y="68.58"/>
 </segment>
 </net>
 <net name="+1V8" class="0">
