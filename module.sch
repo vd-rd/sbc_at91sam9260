@@ -9841,6 +9841,9 @@ by exp-lbrs.ulp</description>
 <part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
 <part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
 <part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
+<part name="GND35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="1k8"/>
+<part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="1k8"/>
 </parts>
 <sheets>
 <sheet>
@@ -10137,6 +10140,17 @@ by exp-lbrs.ulp</description>
 <attribute name="NAME" x="125.73" y="24.3586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="125.73" y="19.558" size="1.778" layer="96"/>
 </instance>
+<instance part="GND35" gate="1" x="111.76" y="81.28" smashed="yes">
+<attribute name="VALUE" x="109.22" y="78.74" size="1.778" layer="96"/>
+</instance>
+<instance part="R28" gate="G$1" x="58.42" y="35.56" smashed="yes">
+<attribute name="NAME" x="54.61" y="37.0586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="54.61" y="32.258" size="1.778" layer="96"/>
+</instance>
+<instance part="R29" gate="G$1" x="58.42" y="27.94" smashed="yes">
+<attribute name="NAME" x="54.61" y="29.4386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="54.61" y="24.638" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10260,6 +10274,20 @@ by exp-lbrs.ulp</description>
 <pinref part="S1" gate="G$1" pin="4"/>
 <wire x1="119.38" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
 <junction x="111.76" y="104.14"/>
+</segment>
+<segment>
+<pinref part="S2" gate="G$1" pin="3"/>
+<wire x1="119.38" y1="91.44" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="91.44" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="S2" gate="G$1" pin="SHIELD"/>
+<wire x1="111.76" y1="88.9" x2="111.76" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="86.36" x2="111.76" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="86.36" x2="111.76" y2="86.36" width="0.1524" layer="91"/>
+<junction x="111.76" y="86.36"/>
+<pinref part="S2" gate="G$1" pin="4"/>
+<wire x1="119.38" y1="88.9" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
+<junction x="111.76" y="88.9"/>
+<pinref part="GND35" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="USBC_ID" class="0">
@@ -10441,6 +10469,11 @@ by exp-lbrs.ulp</description>
 <wire x1="48.26" y1="66.04" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
 <label x="66.04" y="66.04" size="1.778" layer="95" align="bottom-right"/>
 </segment>
+<segment>
+<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="27.94" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
+<label x="40.64" y="27.94" size="1.27" layer="95"/>
+</segment>
 </net>
 <net name="GPIO0" class="0">
 <segment>
@@ -10554,6 +10587,11 @@ by exp-lbrs.ulp</description>
 <pinref part="SV1" gate="G$1" pin="18"/>
 <wire x1="33.02" y1="66.04" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
 <label x="15.24" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
+<label x="40.64" y="35.56" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="GPIO1" class="0">
@@ -10762,6 +10800,14 @@ by exp-lbrs.ulp</description>
 <wire x1="134.62" y1="22.86" x2="147.32" y2="22.86" width="0.1524" layer="91"/>
 <label x="139.7" y="22.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R29" gate="G$1" pin="2"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="27.94" x2="63.5" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="35.56" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
+<junction x="63.5" y="35.56"/>
+<label x="71.12" y="35.56" size="1.27" layer="95"/>
+</segment>
 </net>
 <net name="REG_EN" class="0">
 <segment>
@@ -10864,6 +10910,30 @@ by exp-lbrs.ulp</description>
 <wire x1="121.92" y1="17.78" x2="147.32" y2="17.78" width="0.1524" layer="91"/>
 <junction x="121.92" y="22.86"/>
 <label x="137.16" y="17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="!WKUP" class="0">
+<segment>
+<pinref part="S2" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="91.44" x2="137.16" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="91.44" x2="137.16" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="S2" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="88.9" x2="134.62" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="91.44" x2="149.86" y2="91.44" width="0.1524" layer="91"/>
+<junction x="137.16" y="91.44"/>
+<label x="144.78" y="91.44" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="!MRST" class="0">
+<segment>
+<pinref part="S1" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="106.68" x2="137.16" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="106.68" x2="137.16" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="104.14" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="106.68" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
+<junction x="137.16" y="106.68"/>
+<label x="147.32" y="106.68" size="1.27" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -11428,6 +11498,14 @@ R27 should not be populated</text>
 <pinref part="R27" gate="G$1" pin="2"/>
 <wire x1="243.84" y1="152.4" x2="248.92" y2="152.4" width="0.1524" layer="91"/>
 <label x="246.38" y="152.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC6" gate="G$1" pin="VCC"/>
+<wire x1="175.26" y1="68.58" x2="185.42" y2="68.58" width="0.1524" layer="91"/>
+<label x="180.34" y="68.58" size="1.778" layer="95"/>
+<pinref part="C62" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="68.58" x2="187.96" y2="68.58" width="0.1524" layer="91"/>
+<junction x="185.42" y="68.58"/>
 </segment>
 </net>
 <net name="+1V8" class="0">
@@ -12122,14 +12200,14 @@ R27 should not be populated</text>
 <pinref part="U$1" gate="G$2" pin="PB8"/>
 </segment>
 </net>
-<net name="I2C_DAT" class="0">
+<net name="I2C_SDA" class="0">
 <segment>
 <wire x1="10.16" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
 <label x="22.86" y="22.86" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="U$1" gate="G$1" pin="PA23"/>
 </segment>
 </net>
-<net name="I2C_CLK" class="0">
+<net name="I2C_SCL" class="0">
 <segment>
 <wire x1="10.16" y1="20.32" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
 <label x="22.86" y="20.32" size="1.778" layer="95" align="bottom-right"/>
@@ -12192,7 +12270,7 @@ R27 should not be populated</text>
 <pinref part="U$1" gate="G$1" pin="PA11"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="!MRST" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="VSEN"/>
 <wire x1="205.74" y1="104.14" x2="195.58" y2="104.14" width="0.1524" layer="91"/>
@@ -12200,6 +12278,7 @@ R27 should not be populated</text>
 <wire x1="195.58" y1="104.14" x2="195.58" y2="101.6" width="0.1524" layer="91"/>
 <junction x="195.58" y="104.14"/>
 <wire x1="195.58" y1="101.6" x2="185.42" y2="101.6" width="0.1524" layer="91"/>
+<label x="180.34" y="101.6" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -12244,16 +12323,6 @@ R27 should not be populated</text>
 <wire x1="10.16" y1="12.7" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
 <label x="12.7" y="12.7" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="PA27"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="IC6" gate="G$1" pin="VCC"/>
-<wire x1="175.26" y1="68.58" x2="185.42" y2="68.58" width="0.1524" layer="91"/>
-<label x="180.34" y="68.58" size="1.778" layer="95"/>
-<pinref part="C62" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="68.58" x2="187.96" y2="68.58" width="0.1524" layer="91"/>
-<junction x="185.42" y="68.58"/>
 </segment>
 </net>
 <net name="NRST" class="0">
