@@ -11425,21 +11425,21 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="66.04" y="81.28" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="31" class="0">
+<net name="GPIO31" class="0">
 <segment>
 <pinref part="SV1" gate="G$1" pin="31"/>
 <wire x1="48.26" y1="83.82" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
 <label x="66.04" y="83.82" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="33" class="0">
+<net name="GPIO33" class="0">
 <segment>
 <pinref part="SV1" gate="G$1" pin="33"/>
 <wire x1="48.26" y1="86.36" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
 <label x="66.04" y="86.36" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="35" class="0">
+<net name="GPIO35" class="0">
 <segment>
 <pinref part="SV1" gate="G$1" pin="35"/>
 <wire x1="48.26" y1="88.9" x2="68.58" y2="88.9" width="0.1524" layer="91"/>
@@ -11544,21 +11544,21 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="15.24" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="32" class="0">
+<net name="GPIO32" class="0">
 <segment>
 <pinref part="SV1" gate="G$1" pin="32"/>
 <wire x1="33.02" y1="83.82" x2="12.7" y2="83.82" width="0.1524" layer="91"/>
 <label x="15.24" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="34" class="0">
+<net name="GPIO34" class="0">
 <segment>
 <pinref part="SV1" gate="G$1" pin="34"/>
 <wire x1="33.02" y1="86.36" x2="12.7" y2="86.36" width="0.1524" layer="91"/>
 <label x="15.24" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="36" class="0">
+<net name="GPIO36" class="0">
 <segment>
 <pinref part="SV1" gate="G$1" pin="36"/>
 <wire x1="33.02" y1="88.9" x2="12.7" y2="88.9" width="0.1524" layer="91"/>
@@ -13384,6 +13384,47 @@ R27 should not be populated</text>
 <pinref part="R27" gate="G$1" pin="1"/>
 <junction x="233.68" y="152.4"/>
 <label x="243.84" y="147.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO36" class="0">
+<segment>
+<pinref part="U$1" gate="G$3" pin="PC0"/>
+<wire x1="114.3" y1="86.36" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
+<label x="99.06" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO35" class="0">
+<segment>
+<pinref part="U$1" gate="G$3" pin="PC1"/>
+<wire x1="114.3" y1="83.82" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
+<label x="99.06" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO34" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PB10"/>
+<wire x1="68.58" y1="60.96" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
+<label x="48.26" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO33" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PB11"/>
+<wire x1="68.58" y1="58.42" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
+<label x="48.26" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO32" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PB20"/>
+<wire x1="68.58" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
+<label x="50.8" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO31" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PB21"/>
+<wire x1="68.58" y1="33.02" x2="50.8" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
