@@ -5504,17 +5504,27 @@ design rules under a new name.</description>
 <signal name="GPIO31">
 <contactref element="SV1" pad="31"/>
 <contactref element="U$1" pad="164"/>
-<wire x1="46.25" y1="32.34" x2="46.51" y2="38.27" width="0" layer="19" extent="1-1"/>
+<wire x1="46.25" y1="32.34" x2="46.25" y2="33.95" width="0.2" layer="1"/>
+<wire x1="46.25" y1="33.95" x2="45.4" y2="34.8" width="0.2" layer="1"/>
+<wire x1="45.4" y1="34.8" x2="45.4" y2="37.16" width="0.2" layer="1"/>
+<wire x1="45.4" y1="37.16" x2="46.51" y2="38.27" width="0.2" layer="1"/>
 </signal>
 <signal name="GPIO33">
 <contactref element="SV1" pad="33"/>
 <contactref element="U$1" pad="162"/>
-<wire x1="47.25" y1="32.34" x2="49.05" y2="38.27" width="0" layer="19" extent="1-1"/>
+<wire x1="47.25" y1="32.34" x2="47.25" y2="34.65" width="0.2" layer="1"/>
+<wire x1="47.25" y1="34.65" x2="47.8" y2="35.2" width="0.2" layer="1"/>
+<wire x1="47.8" y1="35.2" x2="47.8" y2="37.02" width="0.2" layer="1"/>
+<wire x1="47.8" y1="37.02" x2="49.05" y2="38.27" width="0.2" layer="1"/>
 </signal>
 <signal name="GPIO35">
 <contactref element="SV1" pad="35"/>
 <contactref element="U$1" pad="159"/>
-<wire x1="48.75" y1="32.34" x2="51.59" y2="38.27" width="0" layer="19" extent="1-1"/>
+<wire x1="48.75" y1="32.34" x2="48.75" y2="33.55" width="0.2" layer="1"/>
+<wire x1="50.3" y1="35.1" x2="50.3" y2="36.6" width="0.2" layer="1"/>
+<wire x1="50.3" y1="36.6" x2="51.59" y2="37.89" width="0.2" layer="1"/>
+<wire x1="51.59" y1="37.89" x2="51.59" y2="38.27" width="0.2" layer="1"/>
+<wire x1="48.75" y1="33.55" x2="50.3" y2="35.1" width="0.2" layer="1"/>
 </signal>
 <signal name="VEXT">
 <contactref element="SV1" pad="2"/>
@@ -5553,12 +5563,14 @@ design rules under a new name.</description>
 <signal name="GPIO32">
 <contactref element="SV1" pad="32"/>
 <contactref element="U$1" pad="163"/>
-<wire x1="46.75" y1="32.34" x2="46.51" y2="35.73" width="0" layer="19" extent="1-1"/>
+<wire x1="46.75" y1="32.34" x2="46.75" y2="35.49" width="0.2" layer="1"/>
+<wire x1="46.75" y1="35.49" x2="46.51" y2="35.73" width="0.2" layer="1"/>
 </signal>
 <signal name="GPIO34">
 <contactref element="SV1" pad="34"/>
 <contactref element="U$1" pad="161"/>
-<wire x1="47.75" y1="32.34" x2="49.05" y2="35.73" width="0" layer="19" extent="1-1"/>
+<wire x1="47.75" y1="32.34" x2="47.75" y2="34.43" width="0.2" layer="1"/>
+<wire x1="47.75" y1="34.43" x2="49.05" y2="35.73" width="0.2" layer="1"/>
 </signal>
 <signal name="USB_VCC">
 <contactref element="R14" pad="2"/>
@@ -6301,7 +6313,11 @@ design rules under a new name.</description>
 <signal name="GPIO36">
 <contactref element="U$1" pad="158"/>
 <contactref element="SV1" pad="36"/>
-<wire x1="49.25" y1="32.34" x2="51.59" y2="35.73" width="0" layer="19" extent="1-1"/>
+<wire x1="49.25" y1="32.34" x2="49.25" y2="33.45" width="0.2" layer="1"/>
+<wire x1="50.4" y1="34.6" x2="50.8" y2="34.6" width="0.2" layer="1"/>
+<wire x1="50.8" y1="34.6" x2="51.59" y2="35.39" width="0.2" layer="1"/>
+<wire x1="51.59" y1="35.39" x2="51.59" y2="35.73" width="0.2" layer="1"/>
+<wire x1="49.25" y1="33.45" x2="50.4" y2="34.6" width="0.2" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
