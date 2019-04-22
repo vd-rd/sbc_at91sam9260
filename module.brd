@@ -3,7 +3,7 @@
 <eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -170,7 +170,7 @@
 <layer number="255" name="Accent" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyOTQ5MTcz" projecturn="a.cGVyc29uYWw6dWUyOTQ5MTczIzIwMTkwMjI0MTc4MzYzMTgx" f3durn="urn:adsk.wipprod:dm.lineage:Qu42psK8QxC4s0pS4Yj2yg" pcbguid="354bdc45-add8-410d-8e23-24a3f8d34690" lastpulledtime="" lastsyncedchangeguid="a2f6dc6b-1f7b-ff19-126d-42d2514a0812"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyOTQ5MTcz" projecturn="a.cGVyc29uYWw6dWUyOTQ5MTczIzIwMTkwMjI0MTc4MzYzMTgx" f3durn="urn:adsk.wipprod:dm.lineage:Qu42psK8QxC4s0pS4Yj2yg" pcbguid="354bdc45-add8-410d-8e23-24a3f8d34690" lastpulledtime="" lastsyncedchangeguid="a3066c17-0ae3-fae8-82d8-1ce18f43b87c"/>
 <plain>
 <wire x1="3" y1="0" x2="77" y2="0" width="0" layer="20"/>
 <wire x1="80" y1="3" x2="80" y2="37" width="0" layer="20"/>
@@ -6009,33 +6009,51 @@ design rules under a new name.</description>
 </signal>
 <signal name="MII_ETX0">
 <contactref element="U$1" pad="193"/>
+<contactref element="SV2" pad="10"/>
+<wire x1="18.57" y1="4.27" x2="31.75" y2="32.34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MII_ETX1">
 <contactref element="U$1" pad="194"/>
+<contactref element="SV2" pad="9"/>
+<wire x1="18.57" y1="1.73" x2="31.25" y2="32.34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MII_ERX0">
 <contactref element="U$1" pad="195"/>
+<contactref element="SV2" pad="8"/>
+<wire x1="16.03" y1="4.27" x2="30.75" y2="32.34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MII_ERX1">
 <contactref element="U$1" pad="196"/>
+<contactref element="SV2" pad="7"/>
+<wire x1="16.03" y1="1.73" x2="30.25" y2="32.34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MII_EMDC">
 <contactref element="U$1" pad="205"/>
+<contactref element="SV2" pad="3"/>
+<wire x1="10.95" y1="1.73" x2="25.75" y2="32.34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MII_ETXCK">
 <contactref element="U$1" pad="202"/>
+<contactref element="SV2" pad="6"/>
+<wire x1="13.49" y1="4.27" x2="27.25" y2="32.34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MII_ETXEN">
 <contactref element="U$1" pad="197"/>
+<contactref element="SV2" pad="2"/>
+<wire x1="8.41" y1="4.27" x2="29.75" y2="32.34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MII_ERXER">
 <contactref element="U$1" pad="201"/>
+<contactref element="SV2" pad="5"/>
+<wire x1="13.49" y1="1.73" x2="27.75" y2="32.34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MII_ECRS">
 <contactref element="U$1" pad="7"/>
 </signal>
 <signal name="MII_EMDIO">
 <contactref element="U$1" pad="206"/>
+<contactref element="SV2" pad="4"/>
+<wire x1="10.95" y1="4.27" x2="25.25" y2="32.34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MII_ERXDV">
 <contactref element="U$1" pad="198"/>
@@ -6270,6 +6288,9 @@ design rules under a new name.</description>
 </signal>
 <signal name="USB_H2_DP">
 <contactref element="SV4" pad="5"/>
+</signal>
+<signal name="MII_ECRSDV">
+<contactref element="SV2" pad="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

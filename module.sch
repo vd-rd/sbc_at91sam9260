@@ -14424,6 +14424,76 @@ R27 should not be populated</text>
 <label x="17.78" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="MII_ETX0" class="0">
+<segment>
+<pinref part="SV2" gate="G$1" pin="10"/>
+<wire x1="205.74" y1="147.32" x2="187.96" y2="147.32" width="0.1524" layer="91"/>
+<label x="190.5" y="147.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MII_ERX0" class="0">
+<segment>
+<pinref part="SV2" gate="G$1" pin="8"/>
+<wire x1="205.74" y1="144.78" x2="187.96" y2="144.78" width="0.1524" layer="91"/>
+<label x="190.5" y="144.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MII_ETXCK" class="0">
+<segment>
+<pinref part="SV2" gate="G$1" pin="6"/>
+<wire x1="205.74" y1="142.24" x2="187.96" y2="142.24" width="0.1524" layer="91"/>
+<label x="190.5" y="142.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MII_EMDIO" class="0">
+<segment>
+<pinref part="SV2" gate="G$1" pin="4"/>
+<wire x1="205.74" y1="139.7" x2="187.96" y2="139.7" width="0.1524" layer="91"/>
+<label x="190.5" y="139.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MII_ETXEN" class="0">
+<segment>
+<pinref part="SV2" gate="G$1" pin="2"/>
+<wire x1="205.74" y1="137.16" x2="187.96" y2="137.16" width="0.1524" layer="91"/>
+<label x="190.5" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MII_ECRSDV" class="0">
+<segment>
+<pinref part="SV2" gate="G$1" pin="1"/>
+<wire x1="220.98" y1="137.16" x2="238.76" y2="137.16" width="0.1524" layer="91"/>
+<label x="236.22" y="137.16" size="1.778" layer="95" align="bottom-right"/>
+</segment>
+</net>
+<net name="MII_EMDC" class="0">
+<segment>
+<pinref part="SV2" gate="G$1" pin="3"/>
+<wire x1="220.98" y1="139.7" x2="238.76" y2="139.7" width="0.1524" layer="91"/>
+<label x="236.22" y="139.7" size="1.778" layer="95" align="bottom-right"/>
+</segment>
+</net>
+<net name="MII_ERXER" class="0">
+<segment>
+<pinref part="SV2" gate="G$1" pin="5"/>
+<wire x1="220.98" y1="142.24" x2="238.76" y2="142.24" width="0.1524" layer="91"/>
+<label x="236.22" y="142.24" size="1.778" layer="95" align="bottom-right"/>
+</segment>
+</net>
+<net name="MII_ERX1" class="0">
+<segment>
+<pinref part="SV2" gate="G$1" pin="7"/>
+<wire x1="220.98" y1="144.78" x2="238.76" y2="144.78" width="0.1524" layer="91"/>
+<label x="236.22" y="144.78" size="1.778" layer="95" align="bottom-right"/>
+</segment>
+</net>
+<net name="MII_ETX1" class="0">
+<segment>
+<pinref part="SV2" gate="G$1" pin="9"/>
+<wire x1="220.98" y1="147.32" x2="238.76" y2="147.32" width="0.1524" layer="91"/>
+<label x="236.22" y="147.32" size="1.778" layer="95" align="bottom-right"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
