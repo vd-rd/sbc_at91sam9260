@@ -11016,7 +11016,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC5" library="parts-diodes" library_urn="urn:adsk.eagle:library:7531666" deviceset="AP65211" device="" package3d_urn="urn:adsk.eagle:package:7631792/1"/>
 <part name="IC7" library="parts-diodes" library_urn="urn:adsk.eagle:library:7531666" deviceset="AP65211" device="" package3d_urn="urn:adsk.eagle:package:7631792/1"/>
-<part name="L1" library="parts-ferrocore" library_urn="urn:adsk.eagle:library:7633163" deviceset="DJNR3015" device="" package3d_urn="urn:adsk.eagle:package:7661088/2" value="2.2uH"/>
+<part name="L1" library="parts-ferrocore" library_urn="urn:adsk.eagle:library:7633163" deviceset="DJNR3015" device="" package3d_urn="urn:adsk.eagle:package:7661088/2" value="4.7uH"/>
 <part name="L2" library="parts-ferrocore" library_urn="urn:adsk.eagle:library:7633163" deviceset="DJNR3015" device="" package3d_urn="urn:adsk.eagle:package:7661088/2" value="2.2uH"/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -11030,10 +11030,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="75k"/>
 <part name="C56" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="1uF"/>
 <part name="C57" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="1uF"/>
-<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
-<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
-<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
-<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
+<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
+<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="15k"/>
+<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="15k"/>
+<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="12k"/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C58" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0603" package3d_urn="urn:adsk.eagle:package:8309187/3" value="10uF"/>
@@ -11284,20 +11284,20 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="PACKAGE" x="147.32" y="53.34" size="1.016" layer="97" rot="R90"/>
 </instance>
 <instance part="R16" gate="G$1" x="160.02" y="66.04" smashed="yes">
-<attribute name="NAME" x="156.21" y="67.5386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="156.21" y="62.738" size="1.778" layer="96"/>
+<attribute name="NAME" x="151.892" y="66.7766" size="1.778" layer="95"/>
+<attribute name="VALUE" x="163.322" y="64.262" size="1.778" layer="96"/>
 </instance>
 <instance part="R17" gate="G$1" x="160.02" y="60.96" smashed="yes">
-<attribute name="NAME" x="156.21" y="62.4586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="156.21" y="57.658" size="1.778" layer="96"/>
+<attribute name="NAME" x="151.892" y="58.6486" size="1.778" layer="95"/>
+<attribute name="VALUE" x="158.496" y="57.912" size="1.778" layer="96"/>
 </instance>
 <instance part="R18" gate="G$1" x="160.02" y="40.64" smashed="yes">
-<attribute name="NAME" x="156.21" y="42.1386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="156.21" y="37.338" size="1.778" layer="96"/>
+<attribute name="NAME" x="152.4" y="40.8686" size="1.778" layer="95"/>
+<attribute name="VALUE" x="162.56" y="38.608" size="1.778" layer="96"/>
 </instance>
 <instance part="R19" gate="G$1" x="160.02" y="35.56" smashed="yes">
-<attribute name="NAME" x="156.21" y="37.0586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="156.21" y="32.258" size="1.778" layer="96"/>
+<attribute name="NAME" x="151.638" y="33.5026" size="1.778" layer="95"/>
+<attribute name="VALUE" x="163.068" y="35.814" size="1.778" layer="96"/>
 </instance>
 <instance part="GND26" gate="1" x="165.1" y="58.42" smashed="yes">
 <attribute name="VALUE" x="162.56" y="55.88" size="1.778" layer="96"/>
@@ -11344,7 +11344,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="VALUE" x="46.99" y="18.542" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R22" gate="G$1" x="43.18" y="10.16" smashed="yes" rot="R180">
-<attribute name="NAME" x="39.37" y="8.6614" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="39.37" y="13.7414" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="46.99" y="13.462" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R24" gate="G$1" x="83.82" y="154.94" smashed="yes">
@@ -12058,22 +12058,25 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="22.86" y1="10.16" x2="38.1" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="LED_BLUE" class="0">
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="20.32" x2="60.96" y2="20.32" width="0.1524" layer="91"/>
+<label x="53.34" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="LED_GREEN" class="0">
 <segment>
 <pinref part="R21" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="15.24" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
+<label x="53.34" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="LED_RED" class="0">
 <segment>
 <pinref part="R22" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="10.16" x2="60.96" y2="10.16" width="0.1524" layer="91"/>
+<label x="53.34" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="HDMA" class="0">
@@ -13811,6 +13814,27 @@ R27 should not be populated</text>
 <pinref part="U1" gate="G$1" pin="PA4"/>
 <wire x1="27.94" y1="71.12" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
 <label x="12.7" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED_BLUE" class="0">
+<segment>
+<pinref part="U1" gate="G$3" pin="PC9"/>
+<wire x1="114.3" y1="63.5" x2="99.06" y2="63.5" width="0.1524" layer="91"/>
+<label x="99.06" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED_GREEN" class="0">
+<segment>
+<pinref part="U1" gate="G$3" pin="PC7"/>
+<wire x1="114.3" y1="68.58" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
+<label x="99.06" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED_RED" class="0">
+<segment>
+<pinref part="U1" gate="G$3" pin="PC6"/>
+<wire x1="114.3" y1="71.12" x2="99.06" y2="71.12" width="0.1524" layer="91"/>
+<label x="99.06" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
