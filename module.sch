@@ -11080,6 +11080,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="U$3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FIDUCIAL" device="" package3d_urn="urn:adsk.eagle:package:6240632/1"/>
 <part name="GND35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="240"/>
+<part name="R37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="1k5"/>
+<part name="R38" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="1k5"/>
+<part name="GND36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11395,6 +11398,17 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="23.9014" y="113.03" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="28.702" y="113.03" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="R37" gate="G$1" x="238.76" y="134.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="237.2614" y="130.81" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="242.062" y="130.81" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R38" gate="G$1" x="238.76" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="237.2614" y="118.11" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="242.062" y="118.11" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND36" gate="1" x="238.76" y="114.3" smashed="yes">
+<attribute name="VALUE" x="236.22" y="111.76" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11525,6 +11539,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="25.4" y1="111.76" x2="20.32" y2="111.76" width="0.1524" layer="91"/>
 <junction x="20.32" y="111.76"/>
 </segment>
+<segment>
+<pinref part="R38" gate="G$1" pin="1"/>
+<pinref part="GND36" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="USBC_ID" class="0">
 <segment>
@@ -11551,6 +11569,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="152.4" y1="149.86" x2="149.86" y2="149.86" width="0.1524" layer="91"/>
 <junction x="149.86" y="149.86"/>
 <label x="132.08" y="149.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="220.98" y1="152.4" x2="231.14" y2="152.4" width="0.1524" layer="91"/>
+<label x="226.06" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USBC_DM" class="0">
@@ -11590,11 +11613,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="162.56" y="144.78"/>
 <label x="167.64" y="144.78" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="220.98" y1="152.4" x2="231.14" y2="152.4" width="0.1524" layer="91"/>
-<label x="226.06" y="152.4" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="N$18" class="0">
 <segment>
@@ -11602,7 +11620,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="USB_DP_PUP" class="0">
+<net name="USBC_PUPD" class="0">
 <segment>
 <pinref part="T1" gate="G$1" pin="B"/>
 <wire x1="205.74" y1="157.48" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
@@ -11634,6 +11652,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="60.96" y1="124.46" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
 <junction x="60.96" y="124.46"/>
 <label x="60.96" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R37" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="139.7" x2="228.6" y2="139.7" width="0.1524" layer="91"/>
+<label x="223.52" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VSYS" class="0">
@@ -12196,6 +12219,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="R36" gate="G$1" pin="2"/>
 <pinref part="IC4" gate="G$1" pin="4"/>
 <wire x1="25.4" y1="121.92" x2="30.48" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="USBC_VDET" class="0">
+<segment>
+<pinref part="R38" gate="G$1" pin="2"/>
+<pinref part="R37" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="127" x2="238.76" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="129.54" x2="228.6" y2="129.54" width="0.1524" layer="91"/>
+<junction x="238.76" y="129.54"/>
+<label x="220.98" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -13881,6 +13914,27 @@ R27 should not be populated</text>
 <pinref part="U1" gate="G$3" pin="PC15"/>
 <wire x1="114.3" y1="48.26" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
 <label x="99.06" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USBC_ID" class="0">
+<segment>
+<pinref part="U1" gate="G$2" pin="PB16"/>
+<wire x1="68.58" y1="45.72" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
+<label x="53.34" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USBC_VDET" class="0">
+<segment>
+<pinref part="U1" gate="G$2" pin="PB17"/>
+<wire x1="68.58" y1="43.18" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
+<label x="53.34" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USBC_PUPD" class="0">
+<segment>
+<pinref part="U1" gate="G$2" pin="PB18"/>
+<wire x1="68.58" y1="40.64" x2="55.88" y2="40.64" width="0.1524" layer="91"/>
+<label x="53.34" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
