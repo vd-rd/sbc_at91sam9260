@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.4.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -11069,11 +11069,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
 <part name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
 <part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
-<part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
-<part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
-<part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
 <part name="R35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
 <part name="U$1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FIDUCIAL" device="" package3d_urn="urn:adsk.eagle:package:6240632/1"/>
 <part name="U$2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FIDUCIAL" device="" package3d_urn="urn:adsk.eagle:package:6240632/1"/>
@@ -12498,24 +12494,8 @@ R27 should not be populated</text>
 <attribute name="NAME" x="168.91" y="62.4586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="176.53" y="62.738" size="1.778" layer="96"/>
 </instance>
-<instance part="R31" gate="G$1" x="185.42" y="162.56" smashed="yes">
-<attribute name="NAME" x="177.546" y="163.0426" size="1.778" layer="95"/>
-<attribute name="VALUE" x="188.722" y="163.068" size="1.778" layer="96"/>
-</instance>
-<instance part="R32" gate="G$1" x="185.42" y="160.02" smashed="yes">
-<attribute name="NAME" x="177.546" y="160.5026" size="1.778" layer="95"/>
-<attribute name="VALUE" x="188.722" y="160.528" size="1.778" layer="96"/>
-</instance>
-<instance part="R33" gate="G$1" x="185.42" y="154.94" smashed="yes">
-<attribute name="NAME" x="177.546" y="155.4226" size="1.778" layer="95"/>
-<attribute name="VALUE" x="188.722" y="155.448" size="1.778" layer="96"/>
-</instance>
 <instance part="GND19" gate="1" x="165.1" y="165.1" smashed="yes">
 <attribute name="VALUE" x="162.56" y="162.56" size="1.778" layer="96"/>
-</instance>
-<instance part="R34" gate="G$1" x="238.76" y="172.72" smashed="yes">
-<attribute name="NAME" x="230.886" y="173.2026" size="1.778" layer="95"/>
-<attribute name="VALUE" x="242.062" y="173.228" size="1.778" layer="96"/>
 </instance>
 <instance part="R35" gate="G$1" x="7.62" y="68.58" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.1374" y="60.706" size="1.778" layer="95" rot="R90"/>
@@ -12837,18 +12817,6 @@ R27 should not be populated</text>
 <pinref part="R30" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="66.04" x2="180.34" y2="68.58" width="0.1524" layer="91"/>
 <junction x="180.34" y="68.58"/>
-</segment>
-<segment>
-<pinref part="R31" gate="G$1" pin="1"/>
-<wire x1="180.34" y1="162.56" x2="175.26" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="162.56" x2="175.26" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="R33" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="160.02" x2="175.26" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="154.94" x2="180.34" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="R32" gate="G$1" pin="1"/>
-<wire x1="180.34" y1="160.02" x2="175.26" y2="160.02" width="0.1524" layer="91"/>
-<junction x="175.26" y="160.02"/>
-<label x="170.18" y="162.56" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R35" gate="G$1" pin="2"/>
@@ -13739,11 +13707,6 @@ R27 should not be populated</text>
 <wire x1="243.84" y1="50.8" x2="233.68" y2="50.8" width="0.1524" layer="91"/>
 <label x="236.22" y="50.8" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="R34" gate="G$1" pin="2"/>
-<wire x1="243.84" y1="172.72" x2="251.46" y2="172.72" width="0.1524" layer="91"/>
-<label x="248.92" y="172.72" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="N$28" class="0">
 <segment>
@@ -13755,17 +13718,6 @@ R27 should not be populated</text>
 <wire x1="101.6" y1="106.68" x2="101.6" y2="109.22" width="0.1524" layer="91"/>
 <junction x="101.6" y="109.22"/>
 <pinref part="L3" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="!SHDN" class="0">
-<segment>
-<pinref part="U1" gate="G$6" pin="SHDN"/>
-<wire x1="228.6" y1="167.64" x2="233.68" y2="167.64" width="0.1524" layer="91"/>
-<label x="236.22" y="167.64" size="1.778" layer="95"/>
-<pinref part="R34" gate="G$1" pin="1"/>
-<wire x1="233.68" y1="167.64" x2="243.84" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="167.64" x2="233.68" y2="172.72" width="0.1524" layer="91"/>
-<junction x="233.68" y="167.64"/>
 </segment>
 </net>
 <net name="!WKUP" class="0">
@@ -13832,27 +13784,6 @@ R27 should not be populated</text>
 <segment>
 <pinref part="IC6" gate="G$1" pin="/WP"/>
 <pinref part="R30" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U1" gate="G$6" pin="TMS"/>
-<pinref part="R33" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="154.94" x2="190.5" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="U1" gate="G$6" pin="TDI"/>
-<pinref part="R32" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="160.02" x2="190.5" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="U1" gate="G$6" pin="TCK"/>
-<pinref part="R31" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="162.56" x2="190.5" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
