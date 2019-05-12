@@ -9877,13 +9877,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="43.18" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VSYS" class="0">
-<segment>
-<pinref part="SV1" gate="G$1" pin="3"/>
-<wire x1="48.26" y1="48.26" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
-<label x="66.04" y="48.26" size="1.778" layer="95" align="bottom-right"/>
-</segment>
-</net>
 <net name="!RST" class="0">
 <segment>
 <pinref part="SV1" gate="G$1" pin="7"/>
@@ -10171,6 +10164,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="68.58" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
 <label x="68.58" y="106.68" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC5" gate="G$1" pin="EN"/>
+<wire x1="119.38" y1="71.12" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
+<label x="111.76" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC7" gate="G$1" pin="EN"/>
+<wire x1="119.38" y1="45.72" x2="114.3" y2="45.72" width="0.1524" layer="91"/>
+<label x="111.76" y="45.72" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$10" class="0">
 <segment>
@@ -10264,17 +10267,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="121.92" y1="111.76" x2="104.14" y2="111.76" width="0.1524" layer="91"/>
 <label x="106.68" y="111.76" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="REG_EN" class="0">
 <segment>
-<pinref part="IC5" gate="G$1" pin="EN"/>
-<wire x1="119.38" y1="71.12" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
-<label x="111.76" y="71.12" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC7" gate="G$1" pin="EN"/>
-<wire x1="119.38" y1="45.72" x2="114.3" y2="45.72" width="0.1524" layer="91"/>
-<label x="111.76" y="45.72" size="1.778" layer="95"/>
+<pinref part="SV1" gate="G$1" pin="3"/>
+<wire x1="48.26" y1="48.26" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
+<label x="66.04" y="48.26" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="+1V8" class="0">
@@ -11085,6 +11081,21 @@ R27 should not be populated</text>
 <wire x1="157.48" y1="111.76" x2="157.48" y2="114.3" width="0.1524" layer="91"/>
 <junction x="157.48" y="114.3"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$5" pin="VDDBU@47"/>
+<wire x1="109.22" y1="167.64" x2="99.06" y2="167.64" width="0.1524" layer="91"/>
+<label x="96.52" y="167.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$6" pin="OSCSEL"/>
+<wire x1="198.12" y1="144.78" x2="182.88" y2="144.78" width="0.1524" layer="91"/>
+<label x="180.34" y="144.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C20" gate="G$1" pin="1"/>
+<wire x1="243.84" y1="50.8" x2="233.68" y2="50.8" width="0.1524" layer="91"/>
+<label x="236.22" y="50.8" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ADDR0" class="0">
 <segment>
@@ -11881,23 +11892,6 @@ R27 should not be populated</text>
 <label x="218.44" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VDDBU" class="0">
-<segment>
-<pinref part="U1" gate="G$5" pin="VDDBU@47"/>
-<wire x1="109.22" y1="167.64" x2="99.06" y2="167.64" width="0.1524" layer="91"/>
-<label x="96.52" y="167.64" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$6" pin="OSCSEL"/>
-<wire x1="198.12" y1="144.78" x2="182.88" y2="144.78" width="0.1524" layer="91"/>
-<label x="180.34" y="144.78" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C20" gate="G$1" pin="1"/>
-<wire x1="243.84" y1="50.8" x2="233.68" y2="50.8" width="0.1524" layer="91"/>
-<label x="236.22" y="50.8" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="U1" gate="G$5" pin="VDDANA@160"/>
@@ -12077,6 +12071,27 @@ R27 should not be populated</text>
 <pinref part="U1" gate="G$1" pin="PA5"/>
 <wire x1="27.94" y1="68.58" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
 <label x="12.7" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAPE_EN2" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PA22"/>
+<wire x1="27.94" y1="25.4" x2="10.16" y2="25.4" width="0.1524" layer="91"/>
+<label x="12.7" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAPE_EN1" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PA25"/>
+<wire x1="27.94" y1="17.78" x2="10.16" y2="17.78" width="0.1524" layer="91"/>
+<label x="12.7" y="17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCCDT" class="0">
+<segment>
+<pinref part="U1" gate="G$2" pin="PB19"/>
+<wire x1="68.58" y1="38.1" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
+<label x="53.34" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
