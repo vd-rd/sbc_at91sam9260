@@ -9233,7 +9233,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C41" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="100nF"/>
 <part name="C42" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="100nF"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="SV1" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="MA18-2" device="" package3d_urn="urn:adsk.eagle:package:10613619/3"/>
+<part name="SV1" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="MA18-2" device="" package3d_urn="urn:adsk.eagle:package:10613619/3" value="header"/>
 <part name="CON1" library="parts-amphenol" library_urn="urn:adsk.eagle:library:7627682" deviceset="10118194-00" device="01LF" package3d_urn="urn:adsk.eagle:package:7627706/3" value="microusb"/>
 <part name="CON2" library="parts-attend" library_urn="urn:adsk.eagle:library:7445056" deviceset="112J-TXAR" device="" package3d_urn="urn:adsk.eagle:package:7566117/4" value="microsd"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9334,8 +9334,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
 <part name="+3V3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
 <part name="+1V8" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
-<part name="TP8" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
-<part name="TP9" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
+<part name="DRX" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
+<part name="DTX" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
 <part name="J1" library="parts-helpers" deviceset="JUMP-" device="0603"/>
 <part name="J2" library="parts-helpers" deviceset="JUMP-" device="0603"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
@@ -9666,11 +9666,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="130.81" y="115.824" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="127" y="118.11" size="1.778" layer="97" rot="R90"/>
 </instance>
-<instance part="TP8" gate="G$1" x="149.86" y="91.44" smashed="yes" rot="R90">
+<instance part="DRX" gate="G$1" x="149.86" y="91.44" smashed="yes" rot="R90">
 <attribute name="NAME" x="156.21" y="90.424" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="152.4" y="92.71" size="1.778" layer="97" rot="R90"/>
 </instance>
-<instance part="TP9" gate="G$1" x="149.86" y="96.52" smashed="yes" rot="R90">
+<instance part="DTX" gate="G$1" x="149.86" y="96.52" smashed="yes" rot="R90">
 <attribute name="NAME" x="156.21" y="95.504" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="152.4" y="97.79" size="1.778" layer="97" rot="R90"/>
 </instance>
@@ -10497,14 +10497,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </net>
 <net name="DRX" class="0">
 <segment>
-<pinref part="TP8" gate="G$1" pin="TP"/>
+<pinref part="DRX" gate="G$1" pin="TP"/>
 <wire x1="147.32" y1="91.44" x2="137.16" y2="91.44" width="0.1524" layer="91"/>
 <label x="139.7" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DTX" class="0">
 <segment>
-<pinref part="TP9" gate="G$1" pin="TP"/>
+<pinref part="DTX" gate="G$1" pin="TP"/>
 <wire x1="147.32" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
 <label x="139.7" y="96.52" size="1.778" layer="95"/>
 </segment>
