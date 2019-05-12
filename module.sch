@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.4.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -378,7 +378,7 @@ grid 7.5 mm, outline 3.2 x 10.3 mm</description>
 <text x="-4.826" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-4.826" y="-3.048" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="MA18-2" urn="urn:adsk.eagle:footprint:10613618/2" library_version="37">
+<package name="MA18-2" urn="urn:adsk.eagle:footprint:10613618/3" library_version="42">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-22.225" y1="2.54" x2="-20.955" y2="2.54" width="0.1524" layer="22"/>
 <wire x1="-20.955" y1="2.54" x2="-20.32" y2="1.905" width="0.1524" layer="22"/>
@@ -626,13 +626,13 @@ grid 7.5 mm, outline 3.2 x 10.3 mm</description>
 <pad name="12" x="-8.89" y="1.27" drill="1.016" diameter="1.5" shape="octagon"/>
 <pad name="13" x="-6.35" y="-1.27" drill="1.016" diameter="1.5" shape="octagon"/>
 <pad name="14" x="-6.35" y="1.27" drill="1.016" diameter="1.5" shape="octagon"/>
-<pad name="15" x="-3.81" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="15" x="-3.81" y="-1.27" drill="1.016" diameter="1.5" shape="octagon"/>
 <pad name="17" x="-1.27" y="-1.27" drill="1.016" diameter="1.5" shape="octagon"/>
 <pad name="19" x="1.27" y="-1.27" drill="1.016" diameter="1.5" shape="octagon"/>
 <pad name="21" x="3.81" y="-1.27" drill="1.016" diameter="1.5" shape="octagon"/>
 <pad name="23" x="6.35" y="-1.27" drill="1.016" diameter="1.5" shape="octagon"/>
 <pad name="25" x="8.89" y="-1.27" drill="1.016" diameter="1.5" shape="octagon"/>
-<pad name="16" x="-3.81" y="1.27" drill="1.016" shape="octagon"/>
+<pad name="16" x="-3.81" y="1.27" drill="1.016" diameter="1.5" shape="octagon"/>
 <pad name="18" x="-1.27" y="1.27" drill="1.016" diameter="1.5" shape="octagon"/>
 <pad name="20" x="1.27" y="1.27" drill="1.016" diameter="1.5" shape="octagon"/>
 <pad name="22" x="3.81" y="1.27" drill="1.016" diameter="1.5" shape="octagon"/>
@@ -919,7 +919,7 @@ grid 7.5 mm, outline 3.2 x 10.3 mm</description>
 <packageinstance name="C075-032X103"/>
 </packageinstances>
 </package3d>
-<package3d name="MA18-2" urn="urn:adsk.eagle:package:10613619/2" type="box" library_version="37">
+<package3d name="MA18-2" urn="urn:adsk.eagle:package:10613619/3" type="box" library_version="42">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="MA18-2"/>
@@ -1240,7 +1240,7 @@ grid 7.5 mm, outline 3.2 x 10.3 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MA18-2" urn="urn:adsk.eagle:component:10613620/2" prefix="SV" uservalue="yes" library_version="37">
+<deviceset name="MA18-2" urn="urn:adsk.eagle:component:10613620/3" prefix="SV" uservalue="yes" library_version="42">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="MA18-2" x="0" y="0"/>
@@ -1286,7 +1286,7 @@ grid 7.5 mm, outline 3.2 x 10.3 mm</description>
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:10613619/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10613619/3"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -9193,7 +9193,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C41" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="100nF"/>
 <part name="C42" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="100nF"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="SV1" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="MA18-2" device="" package3d_urn="urn:adsk.eagle:package:10613619/2"/>
+<part name="SV1" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="MA18-2" device="" package3d_urn="urn:adsk.eagle:package:10613619/3"/>
 <part name="CON1" library="parts-amphenol" library_urn="urn:adsk.eagle:library:7627682" deviceset="10118194-00" device="01LF" package3d_urn="urn:adsk.eagle:package:7627706/3" value="microusb"/>
 <part name="CON2" library="parts-attend" library_urn="urn:adsk.eagle:library:7445056" deviceset="112J-TXAR" device="" package3d_urn="urn:adsk.eagle:package:7566117/4" value="microsd"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -12070,6 +12070,13 @@ R27 should not be populated</text>
 <pinref part="U1" gate="G$2" pin="PB15"/>
 <wire x1="68.58" y1="48.26" x2="55.88" y2="48.26" width="0.1524" layer="91"/>
 <label x="58.42" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO3" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PA5"/>
+<wire x1="27.94" y1="68.58" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
+<label x="12.7" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
