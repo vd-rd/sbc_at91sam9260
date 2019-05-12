@@ -315,8 +315,8 @@ Metric Code Size 1005</description>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
-<package name="R0603" urn="urn:adsk.eagle:footprint:8309988/1" library_version="29">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<package name="F0603" urn="urn:adsk.eagle:footprint:10625286/1" library_version="42">
+<description>&lt;b&gt;SMD Fuse&lt;/b&gt;</description>
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
 <wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
 <wire x1="0.1" y1="0.5" x2="-0.1" y2="0.5" width="0.2" layer="21"/>
@@ -866,6 +866,19 @@ grid 7.5 mm, outline 3.2 x 10.3 mm</description>
 <rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
 <rectangle x1="4.826" y1="1.016" x2="5.334" y2="1.524" layer="51"/>
 </package>
+<package name="F1206" urn="urn:adsk.eagle:footprint:8320467/2" library_version="42">
+<description>&lt;b&gt;SMD Fuse&lt;/b&gt;</description>
+<wire x1="0.9525" y1="-0.8128" x2="-0.9652" y2="-0.8128" width="0.1524" layer="51"/>
+<wire x1="0.9525" y1="0.8128" x2="-0.9652" y2="0.8128" width="0.1524" layer="51"/>
+<wire x1="-0.5" y1="1" x2="0.5" y2="1" width="0.2" layer="21"/>
+<wire x1="-0.5" y1="-0.9" x2="0.5" y2="-0.9" width="0.2" layer="21"/>
+<smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<text x="-1.27" y="1.27" size="0.8" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<rectangle x1="-1.6891" y1="-0.8763" x2="-0.9525" y2="0.8763" layer="51"/>
+<rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="51"/>
+<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="C050-025X075" urn="urn:adsk.eagle:package:8154556/2" type="model" library_version="29">
@@ -894,10 +907,10 @@ Metric Code Size 1005</description>
 <packageinstance name="C0603"/>
 </packageinstances>
 </package3d>
-<package3d name="R0603" urn="urn:adsk.eagle:package:8309995/2" type="model" library_version="29">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<package3d name="F0603" urn="urn:adsk.eagle:package:10625287/2" type="model" library_version="42">
+<description>&lt;b&gt;SMD Fuse&lt;/b&gt;</description>
 <packageinstances>
-<packageinstance name="R0603"/>
+<packageinstance name="F0603"/>
 </packageinstances>
 </package3d>
 <package3d name="R0402" urn="urn:adsk.eagle:package:8170460/4" type="model" library_version="29">
@@ -937,6 +950,12 @@ grid 7.5 mm, outline 3.2 x 10.3 mm</description>
 <packageinstance name="MA05-2"/>
 </packageinstances>
 </package3d>
+<package3d name="F1206" urn="urn:adsk.eagle:package:8320468/3" type="model" library_version="42">
+<description>&lt;b&gt;SMD Fuse&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="F1206"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="C-EU" urn="urn:adsk.eagle:symbol:8154553/2" library_version="29">
@@ -951,14 +970,19 @@ grid 7.5 mm, outline 3.2 x 10.3 mm</description>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
-<symbol name="R-EU" urn="urn:adsk.eagle:symbol:8309987/1" library_version="29">
-<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-0.889" x2="2.54" y2="0.889" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
-<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.286" y="-0.508" size="1.016" layer="97">&gt;PACKAGE</text>
+<symbol name="FUSE" urn="urn:adsk.eagle:symbol:8320466/1" library_version="42">
+<wire x1="-2.794" y1="-0.762" x2="2.794" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="2.794" y1="0.762" x2="-2.794" y2="0.762" width="0.254" layer="94"/>
+<wire x1="2.794" y1="-0.762" x2="2.794" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-2.794" y1="0.762" x2="-2.794" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.524" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="92.795489"/>
+<wire x1="1.524" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="92.795489"/>
+<text x="-5.08" y="1.397" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="-2.54" size="1.016" layer="97">&gt;CURRENT</text>
+<text x="0" y="-2.54" size="1.016" layer="97">&gt;PACKAGE</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
@@ -1182,21 +1206,37 @@ grid 7.5 mm, outline 3.2 x 10.3 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RES-" urn="urn:adsk.eagle:component:8309998/2" prefix="R" uservalue="yes" library_version="29">
+<deviceset name="FUSE-PTC-" urn="urn:adsk.eagle:component:8320469/4" prefix="F" uservalue="yes" library_version="42">
 <gates>
-<gate name="G$1" symbol="R-EU" x="0" y="0"/>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="0603" package="R0603">
+<device name="1206" package="F1206">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:8309995/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8320468/3"/>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="CURRENT" value="200mA" constant="no"/>
+<attribute name="PACKAGE" value="1206" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="0603" package="F0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10625287/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="0.6A" constant="no"/>
 <attribute name="PACKAGE" value="0603" constant="no"/>
 </technology>
 </technologies>
@@ -9222,7 +9262,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="RMII" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="MA05-2" device="" package3d_urn="urn:adsk.eagle:package:10613629/2" value="rmii"/>
 <part name="IC6" library="parts-adesto" library_urn="urn:adsk.eagle:library:10458800" deviceset="AT45DB" device="-S" package3d_urn="urn:adsk.eagle:package:10612485/2"/>
-<part name="R14" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="RES-" device="0603" package3d_urn="urn:adsk.eagle:package:8309995/2" value="500mA"/>
+<part name="F1" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="FUSE-PTC-" device="0603" package3d_urn="urn:adsk.eagle:package:10625287/2" value="500mA"/>
 <part name="LED1" library="parts-optosupply" library_urn="urn:adsk.eagle:library:7630749" deviceset="OSTB1204" device="C1E" package3d_urn="urn:adsk.eagle:package:7630752/2"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC5" library="parts-diodes" library_urn="urn:adsk.eagle:library:7531666" deviceset="AP65211" device="" package3d_urn="urn:adsk.eagle:package:7631792/1"/>
@@ -9276,8 +9316,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="1k8"/>
 <part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="1k8"/>
 <part name="USB" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="MA05-1" device="" package3d_urn="urn:adsk.eagle:package:10613630/2" value="usbhost"/>
-<part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
-<part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
+<part name="!RST" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
+<part name="!WKUP" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
 <part name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
 <part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9406,7 +9446,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="GND22" gate="1" x="193.04" y="101.6" smashed="yes">
 <attribute name="VALUE" x="190.5" y="99.06" size="1.778" layer="96"/>
 </instance>
-<instance part="R14" gate="G$1" x="66.04" y="167.64" smashed="yes">
+<instance part="F1" gate="G$1" x="66.04" y="167.64" smashed="yes">
 <attribute name="NAME" x="62.23" y="169.1386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="62.23" y="164.338" size="1.778" layer="96"/>
 <attribute name="PACKAGE" x="63.754" y="167.132" size="1.016" layer="97"/>
@@ -9577,11 +9617,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="VALUE" x="214.63" y="55.88" size="1.778" layer="96"/>
 <attribute name="NAME" x="214.63" y="74.422" size="1.778" layer="95"/>
 </instance>
-<instance part="TP1" gate="G$1" x="124.46" y="106.68" smashed="yes" rot="R90">
+<instance part="!RST" gate="G$1" x="124.46" y="106.68" smashed="yes" rot="R90">
 <attribute name="NAME" x="130.81" y="105.664" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="127" y="107.95" size="1.778" layer="97" rot="R90"/>
 </instance>
-<instance part="TP2" gate="G$1" x="124.46" y="101.6" smashed="yes" rot="R90">
+<instance part="!WKUP" gate="G$1" x="124.46" y="101.6" smashed="yes" rot="R90">
 <attribute name="NAME" x="130.81" y="100.584" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="127" y="102.87" size="1.778" layer="97" rot="R90"/>
 </instance>
@@ -9849,14 +9889,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="CON1" gate="G$1" pin="VCC"/>
 <wire x1="53.34" y1="162.56" x2="60.96" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="162.56" x2="60.96" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="F1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="USB_VCC" class="0">
 <segment>
 <wire x1="71.12" y1="167.64" x2="83.82" y2="167.64" width="0.1524" layer="91"/>
 <label x="73.66" y="167.64" size="1.778" layer="95"/>
-<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="F1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="IN2"/>
@@ -9882,6 +9922,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="SV1" gate="G$1" pin="7"/>
 <wire x1="48.26" y1="53.34" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
 <label x="66.04" y="53.34" size="1.778" layer="95" align="bottom-right"/>
+</segment>
+<segment>
+<pinref part="!RST" gate="G$1" pin="TP"/>
+<wire x1="121.92" y1="106.68" x2="104.14" y2="106.68" width="0.1524" layer="91"/>
+<label x="106.68" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART_TXD0" class="0">
@@ -10428,16 +10473,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </net>
 <net name="!WKUP" class="0">
 <segment>
-<pinref part="TP2" gate="G$1" pin="TP"/>
+<pinref part="!WKUP" gate="G$1" pin="TP"/>
 <wire x1="121.92" y1="101.6" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
 <label x="106.68" y="101.6" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="!MRST" class="0">
-<segment>
-<pinref part="TP1" gate="G$1" pin="TP"/>
-<wire x1="121.92" y1="106.68" x2="104.14" y2="106.68" width="0.1524" layer="91"/>
-<label x="106.68" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
