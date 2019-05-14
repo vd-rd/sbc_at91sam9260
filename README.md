@@ -2,6 +2,8 @@
 The second installment in the embedded Linux hardware development learning exercise.
 The board is an updated version of the previous [AT91RM9200_SBC](https://github.com/vd-rd/sbc_at91rm9200/).
 
+Note: the CPU comes in two variants, 208 pin PQFP and 217 pin BGA. The PFQP version is pin compatible with AT91SAM9XE. The BGA version is compatible with the improved AT91SAM9G20.
+
 ### Features
  * CPU - AT91SAM9260 processor (ARM926EJ @ 200MHz)
  * RAM - 1Gb SDRAM max ( 3V3 and 1V8 types supported)
