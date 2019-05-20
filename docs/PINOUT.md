@@ -40,9 +40,11 @@ Pin descriptions:
 | 34 | GPIO5 |
 | 35 | GPIO6 |
 | 36 | GPIO7 |
+
 Beside the standard connector, the SBC features two additional headers: RMII (for networking) and USBH (for USB host connectivity). They can be used with the [PoE cape](https://github.com/vd-rd/hw_cape_poe) or other modules.
 
 RMII connector is placed on the bottom left corner and has the following pinout:
+
 | Pin | Signal | Description | Observations |
 | ------ | ------ | ------ | ------ |
 | 1 | CRSDV | 
@@ -57,6 +59,7 @@ RMII connector is placed on the bottom left corner and has the following pinout:
 | 10 | TX0 |
 
 USB Host connector in placed on the bottom right corner and has the following pinout:
+
 | Pin | Signal | Description | Observations |
 | ------ | ------ | ------ | ------ |
 | 1 |
