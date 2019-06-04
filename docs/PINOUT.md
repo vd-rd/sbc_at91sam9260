@@ -1,3 +1,9 @@
+### Headers and pinout
+
+|Front view | Back view |
+| ------ | ------ |
+| ![module_top](/assets/top.png) | ![module_bottom](/assets/bottom.png) |
+
 The boards feature a standard connector for providing power, GPIO and communication protocols. It is placed in the top of the board and contains 36 pins. The pins provide a standard feature per Apollo.IoT specification, but they can have alternative purposes, depending on the board.
 
 Pin descriptions:
