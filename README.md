@@ -1,3 +1,4 @@
+![board_render](/assets/front.png)
 ## Description
 The second installment in the embedded Linux hardware development learning exercise.
 The board is an updated version of the previous [AT91RM9200_SBC](https://github.com/vd-rd/sbc_at91rm9200/).
@@ -21,4 +22,5 @@ You can find all necesary information to build or evaluate the module here:
    - [View 3D board render](https://a360.co/2PfLcwq)
    - [Fabrication files](https://github.com/vd-rd/sbc_at91sam9260/releases)
 
-
+### Current status and changelog
+  - v1.1.0 sent to factory, expected to be ready for assembly and testing in mid June.
