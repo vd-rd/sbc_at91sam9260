@@ -26,4 +26,4 @@ You can find all necesary information to build or evaluate the module here:
   - v1.1.0 sent to factory, expected to be ready for assembly and testing in mid June.
   - 17feb2021 - v1.1.0 assembled. Debug via UART and USB functional.
   - 19feb2021 - sam-ba is able to load applets. AT91Bootstrap configured and flashed starting from at91sam9260ekdf_uboot_defconfig
-  - 21feb2031 - Preliminary uBoot configured and flashed starting from at91sam9260ek_defconfig
+  - 21feb2021 - Preliminary uBoot configured and flashed starting from at91sam9260ek_defconfig
