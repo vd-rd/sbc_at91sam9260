@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -9342,6 +9342,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
 <part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
 <part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
+<part name="+1V1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
+<part name="GND15" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -9682,6 +9684,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="76.2" y="109.22" size="1.778" layer="95"/>
 <attribute name="VALUE" x="76.2" y="102.87" size="1.778" layer="96"/>
 </instance>
+<instance part="+1V1" gate="G$1" x="124.46" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="130.81" y="120.904" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="127" y="123.19" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="GND15" gate="G$1" x="124.46" y="88.9" smashed="yes" rot="R90">
+<attribute name="NAME" x="130.81" y="87.884" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="127" y="90.17" size="1.778" layer="97" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9811,6 +9821,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="121.92" y1="91.44" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="91.44" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
 <junction x="119.38" y="93.98"/>
+<pinref part="GND15" gate="G$1" pin="TP"/>
+<wire x1="121.92" y1="88.9" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="88.9" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
+<junction x="119.38" y="91.44"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="3"/>
@@ -10507,6 +10521,13 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="DTX" gate="G$1" pin="TP"/>
 <wire x1="147.32" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
 <label x="139.7" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RECOVERY" class="0">
+<segment>
+<pinref part="+1V1" gate="G$1" pin="TP"/>
+<wire x1="121.92" y1="121.92" x2="104.14" y2="121.92" width="0.1524" layer="91"/>
+<label x="106.68" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -12130,6 +12151,13 @@ R27 should not be populated</text>
 <pinref part="U1" gate="G$2" pin="PB19"/>
 <wire x1="68.58" y1="38.1" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
 <label x="53.34" y="38.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RECOVERY" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PA26"/>
+<wire x1="27.94" y1="15.24" x2="10.16" y2="15.24" width="0.1524" layer="91"/>
+<label x="12.7" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
