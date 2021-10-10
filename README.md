@@ -23,6 +23,7 @@ You can find all necesary information to build or evaluate the module here:
    - [Fabrication files](https://github.com/vd-rd/sbc_at91sam9260/releases)
 
 ### Current status and changelog
+  - v1.1.0 assembled and tested using SAM-BA, AT91Bootstrap, U-Boot and Linux Kernel ported from AT91SAM9260EK and running ok
   - v1.1.0 sent to factory, expected to be ready for assembly and testing in mid June.
   - 17feb2021 - v1.1.0 assembled. Debug via UART and USB functional.
   - 19feb2021 - sam-ba is able to load applets. AT91Bootstrap configured and flashed starting from at91sam9260ekdf_uboot_defconfig
