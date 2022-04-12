@@ -12603,6 +12603,11 @@ R27 should not be populated</text>
 <wire x1="63.5" y1="-7.62" x2="40.64" y2="-7.62" width="0.1524" layer="91"/>
 <label x="43.18" y="-7.62" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="68.58" y1="73.66" x2="45.72" y2="73.66" width="0.1524" layer="91"/>
+<label x="48.26" y="73.66" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$2" pin="PB5"/>
+</segment>
 </net>
 <net name="MII_INT" class="0">
 <segment>
@@ -13700,8 +13705,9 @@ R27 should not be populated</text>
 </net>
 <net name="MII_ECRSDV" class="0">
 <segment>
-<wire x1="220.98" y1="137.16" x2="238.76" y2="137.16" width="0.1524" layer="91"/>
-<label x="236.22" y="137.16" size="1.778" layer="95" align="bottom-right"/>
+<wire x1="198.12" y1="121.92" x2="215.9" y2="121.92" width="0.1524" layer="91"/>
+<label x="213.36" y="121.92" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="X1" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="MII_EMDC" class="0">
