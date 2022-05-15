@@ -43,5 +43,16 @@ TBD
 ## Loading recovery
 TBD
 
+## Tools and versions
+
+At the time of writing this documents the following versions and tools were used:
+ - AT91Bootstrap - v3.10.4 version from git 
+ - U-Boot v2022.04 version
+ - Linux Kernel - 5.17.5 version
+
+Compilers:
+ - GCC-ARM-none-EABI - v11.2
+ - GCC-ARM-GNULINUXHF - v11.2
+
 [^1]: BMS pin function and code relocation [AT91SAM9260 datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-6221-32-bit-ARM926EJ-S-Embedded-Microprocessor-SAM9260_Datasheet.pdf), section 6.1.1, page 20 
 [^2]: Although [AT45DB321](https://www.dialog-semiconductor.com/sites/default/files/2021-04/DS-AT45DB321E-8784L-032019.pdf) was chosen, any member of the AT45 series can be used with capacities ranging from 4Mbit to 256Mbit
