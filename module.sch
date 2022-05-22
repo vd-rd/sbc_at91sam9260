@@ -9791,6 +9791,8 @@ Source: .050 DIP EDGE CARD.pdf</description>
 <part name="GND99" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="RECV" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
+<part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10131,6 +10133,12 @@ Source: .050 DIP EDGE CARD.pdf</description>
 <attribute name="NAME" x="130.81" y="87.884" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="127" y="90.17" size="1.778" layer="97" rot="R90"/>
 </instance>
+<instance part="GND38" gate="1" x="7.62" y="58.42" smashed="yes">
+<attribute name="VALUE" x="5.08" y="55.88" size="1.778" layer="96"/>
+</instance>
+<instance part="GND39" gate="1" x="73.66" y="71.12" smashed="yes">
+<attribute name="VALUE" x="71.12" y="68.58" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10278,6 +10286,20 @@ Source: .050 DIP EDGE CARD.pdf</description>
 <pinref part="R38" gate="G$1" pin="1"/>
 <pinref part="GND36" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="SV1" gate="G$1" pin="14"/>
+<wire x1="33.02" y1="60.96" x2="7.62" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="GND38" gate="1" pin="GND"/>
+<pinref part="SV1" gate="G$1" pin="36"/>
+<wire x1="33.02" y1="88.9" x2="7.62" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="88.9" x2="7.62" y2="60.96" width="0.1524" layer="91"/>
+<junction x="7.62" y="60.96"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="G$1" pin="23"/>
+<wire x1="48.26" y1="73.66" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="GND39" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="USBC_ID" class="0">
 <segment>
@@ -10422,18 +10444,11 @@ Source: .050 DIP EDGE CARD.pdf</description>
 <label x="66.04" y="68.58" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="IRQ2" class="0">
-<segment>
-<pinref part="SV1" gate="G$1" pin="21"/>
-<wire x1="48.26" y1="71.12" x2="68.58" y2="71.12" width="0.1524" layer="91"/>
-<label x="66.04" y="71.12" size="1.778" layer="95" align="bottom-right"/>
-</segment>
-</net>
 <net name="UART_TXD2" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="23"/>
-<wire x1="48.26" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
-<label x="66.04" y="73.66" size="1.778" layer="95" align="bottom-right"/>
+<label x="66.04" y="71.12" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="SV1" gate="G$1" pin="21"/>
+<wire x1="48.26" y1="71.12" x2="68.58" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPI_CLK" class="0">
@@ -10513,13 +10528,6 @@ Source: .050 DIP EDGE CARD.pdf</description>
 <label x="15.24" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CAPE_EN2" class="0">
-<segment>
-<pinref part="SV1" gate="G$1" pin="14"/>
-<wire x1="33.02" y1="60.96" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
-<label x="15.24" y="60.96" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="UART_RXD1" class="0">
 <segment>
 <pinref part="SV1" gate="G$1" pin="16"/>
@@ -10546,18 +10554,11 @@ Source: .050 DIP EDGE CARD.pdf</description>
 <label x="15.24" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO3" class="0">
-<segment>
-<pinref part="SV1" gate="G$1" pin="22"/>
-<wire x1="33.02" y1="71.12" x2="12.7" y2="71.12" width="0.1524" layer="91"/>
-<label x="15.24" y="71.12" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="UART_RXD2" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="24"/>
-<wire x1="33.02" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
-<label x="15.24" y="73.66" size="1.778" layer="95"/>
+<label x="15.24" y="71.12" size="1.778" layer="95"/>
+<pinref part="SV1" gate="G$1" pin="22"/>
+<wire x1="33.02" y1="71.12" x2="12.7" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPI_NSS" class="0">
@@ -10593,13 +10594,6 @@ Source: .050 DIP EDGE CARD.pdf</description>
 <pinref part="SV1" gate="G$1" pin="34"/>
 <wire x1="33.02" y1="86.36" x2="12.7" y2="86.36" width="0.1524" layer="91"/>
 <label x="15.24" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIO36" class="0">
-<segment>
-<pinref part="SV1" gate="G$1" pin="36"/>
-<wire x1="33.02" y1="88.9" x2="12.7" y2="88.9" width="0.1524" layer="91"/>
-<label x="15.24" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -10953,6 +10947,13 @@ Source: .050 DIP EDGE CARD.pdf</description>
 <pinref part="+1V1" gate="G$1" pin="TP"/>
 <wire x1="121.92" y1="121.92" x2="104.14" y2="121.92" width="0.1524" layer="91"/>
 <label x="106.68" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO3" class="0">
+<segment>
+<pinref part="SV1" gate="G$1" pin="24"/>
+<wire x1="33.02" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
+<label x="15.24" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -13698,9 +13699,9 @@ R27 should not be populated</text>
 </net>
 <net name="MII_ETXEN" class="0">
 <segment>
-<wire x1="182.88" y1="101.6" x2="160.02" y2="101.6" width="0.1524" layer="91"/>
-<label x="162.56" y="101.6" size="1.778" layer="95"/>
-<pinref part="X2" gate="G$1" pin="3"/>
+<label x="162.56" y="99.06" size="1.778" layer="95"/>
+<pinref part="X2" gate="G$1" pin="5"/>
+<wire x1="182.88" y1="99.06" x2="160.02" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MII_ECRSDV" class="0">
@@ -13719,23 +13720,9 @@ R27 should not be populated</text>
 </net>
 <net name="MII_ERXER" class="0">
 <segment>
-<wire x1="165.1" y1="124.46" x2="182.88" y2="124.46" width="0.1524" layer="91"/>
-<label x="175.26" y="124.46" size="1.778" layer="95" align="bottom-right"/>
-<pinref part="X1" gate="G$1" pin="3"/>
-</segment>
-</net>
-<net name="MII_ERX1" class="0">
-<segment>
-<wire x1="165.1" y1="121.92" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
 <label x="175.26" y="121.92" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="X1" gate="G$1" pin="5"/>
-</segment>
-</net>
-<net name="MII_ETX1" class="0">
-<segment>
-<wire x1="160.02" y1="99.06" x2="182.88" y2="99.06" width="0.1524" layer="91"/>
-<label x="175.26" y="99.06" size="1.778" layer="95" align="bottom-right"/>
-<pinref part="X2" gate="G$1" pin="5"/>
+<wire x1="182.88" y1="121.92" x2="165.1" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -13762,6 +13749,20 @@ R27 should not be populated</text>
 <pinref part="X1" gate="G$1" pin="7"/>
 <wire x1="182.88" y1="119.38" x2="162.56" y2="119.38" width="0.1524" layer="91"/>
 <label x="165.1" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MII_ERX1" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="3"/>
+<wire x1="182.88" y1="124.46" x2="165.1" y2="124.46" width="0.1524" layer="91"/>
+<label x="165.1" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MII_ETX1" class="0">
+<segment>
+<pinref part="X2" gate="G$1" pin="3"/>
+<wire x1="182.88" y1="101.6" x2="160.02" y2="101.6" width="0.1524" layer="91"/>
+<label x="162.56" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
